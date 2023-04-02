@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Django tutorials</title>
-  </head>
-  <body>
+{% extends "./base.html" %}
+{% block start %}
     <h1>Hello</h1>
     <table>
   <tr>
@@ -33,6 +29,11 @@
     {% else %}
     <p>Not available</p>
     {% endif %}
-  </body>
-</html>
+    <a href="/about">
+      about
+    </a>
+        <a href="/contact">
+      contact
+    </a>
+{% endblock %}
 
